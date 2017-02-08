@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Store = undefined;
 
-var _Store = require('./es5/Store');
+var _Store = require('./Store');
 
 Object.defineProperty(exports, 'Store', {
   enumerable: true,
@@ -19,3 +19,4 @@ var aStore = _Store.Store; /**
                             * Created by sam_g on 2/7/2017.
                             */
 exports.default = aStore;
+//# sourceMappingURL=index.js.map

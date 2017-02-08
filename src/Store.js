@@ -21,7 +21,7 @@ export class Store{
     triggerChangeCallbacks(property, newValue, oldValue){
         if(!this.onChangeCallbacks[property]) return;
 
-        this.onChangeCallbacks[property].forEach((callback)=>callback(property, newValue, oldValue));
+        this.onChangeCallbacks[property].forEach((callback)=>callback(newValue, oldValue, property));
     }
 
     setState(newState){

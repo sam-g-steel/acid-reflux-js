@@ -42,7 +42,7 @@ var Store = exports.Store = function () {
             if (!this.onChangeCallbacks[property]) return;
 
             this.onChangeCallbacks[property].forEach(function (callback) {
-                return callback(property, newValue, oldValue);
+                return callback(newValue, oldValue, property);
             });
         }
     }, {

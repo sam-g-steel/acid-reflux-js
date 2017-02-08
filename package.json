@@ -1,0 +1,26 @@
+{
+  "name": "acid-reflux-js",
+  "version": "0.0.1",
+  "description": "A simple library for uni-directional dataflow application architecture... inspired by Flux and Redux",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sam-g-steel/acid-reflux-js.git"
+  },
+  "keywords": [
+    "Store"
+  ],
+  "author": "Samuel Vincent Sylvester",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sam-g-steel/acid-reflux-js/issues"
+  },
+  "homepage": "https://github.com/sam-g-steel/acid-reflux-js#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-flow-strip-types": "^6.22.0"
+  }
+}

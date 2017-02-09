@@ -18,16 +18,13 @@ export class Store{
         return this.stateHistory[index];
     }
 
-    triggerChangeCallbacks(property, newValue, oldValue){
-        if(!this.onChangeCallbacks[property]) return;
-
-        this.onChangeCallbacks[property].forEach((callback)=>callback(newValue, oldValue, property));
-    }
-
-    setState(newState){
+    setState(newState, historyMode = true){
         // Save the old state
         let oldState = this.state;
-        this.stateHistory.push(oldState);
+
+        if(historyMode == true){
+            this.stateHistory.push(oldState);
+        }
 
         // Update the state
         this.state = _.assign({}, this.state, newState);
@@ -55,6 +52,19 @@ export class Store{
         }else {
             this.onChangeCallbacks[property].push(callback);
         }
+    }
+
+    triggerChangeCallbacks(property, newValue, oldValue){
+        if(!this.onChangeCallbacks[property]) return;
+
+        this.onChangeCallbacks[property].forEach((callback)=>callback(newValue, oldValue, property));
+    }
+
+    unSubscribeToChanges(callback, property = "__anyChange"){
+        let callbackList = this.onChangeCallbacks[property];
+        if(callbackList == undefined) return;
+
+        this.onChangeCallbacks[property] = _.pull(callbackList, callback);
     }
 }
 

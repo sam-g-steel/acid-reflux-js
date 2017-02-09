@@ -37,20 +37,16 @@ var Store = exports.Store = function () {
             return this.stateHistory[index];
         }
     }, {
-        key: "triggerChangeCallbacks",
-        value: function triggerChangeCallbacks(property, newValue, oldValue) {
-            if (!this.onChangeCallbacks[property]) return;
-
-            this.onChangeCallbacks[property].forEach(function (callback) {
-                return callback(newValue, oldValue, property);
-            });
-        }
-    }, {
         key: "setState",
         value: function setState(newState) {
+            var historyMode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+
             // Save the old state
             var oldState = this.state;
-            this.stateHistory.push(oldState);
+
+            if (historyMode == true) {
+                this.stateHistory.push(oldState);
+            }
 
             // Update the state
             this.state = _lodash2.default.assign({}, this.state, newState);
@@ -81,6 +77,25 @@ var Store = exports.Store = function () {
             } else {
                 this.onChangeCallbacks[property].push(callback);
             }
+        }
+    }, {
+        key: "triggerChangeCallbacks",
+        value: function triggerChangeCallbacks(property, newValue, oldValue) {
+            if (!this.onChangeCallbacks[property]) return;
+
+            this.onChangeCallbacks[property].forEach(function (callback) {
+                return callback(newValue, oldValue, property);
+            });
+        }
+    }, {
+        key: "unSubscribeToChanges",
+        value: function unSubscribeToChanges(callback) {
+            var property = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "__anyChange";
+
+            var callbackList = this.onChangeCallbacks[property];
+            if (callbackList == undefined) return;
+
+            this.onChangeCallbacks[property] = _lodash2.default.pull(callbackList, callback);
         }
     }]);
 

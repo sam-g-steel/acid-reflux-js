@@ -1,6 +1,6 @@
 {
   "name": "acid-reflux-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple library for uni-directional dataflow application architecture... inspired by Flux and Redux",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/sam-g-steel/acid-reflux-js#readme",
   "dependencies": {
+    "fbjs": "^0.8.9",
     "lodash": "^4.17.4"
   },
   "devDependencies": {

@@ -2,6 +2,7 @@
  * Created by sam_g on 2/7/2017.
  */
 import _ from 'lodash';
+import shallowEqual from 'fbjs/lib/shallowEqual';
 
 export class Store{
     constructor(){
@@ -43,7 +44,9 @@ export class Store{
         for(let property in this.state){
             let newProperty = this.state[property];
             let oldProperty = oldState[property];
-            if(newProperty !== oldProperty){
+
+            if( shallowEqual(newProperty, oldProperty)){
+            //if(newProperty !== oldProperty){
                 // changes.push(property);
                 this.triggerChangeCallbacks(property, newProperty, oldProperty);
                 anyChanges = true;

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -10,9 +10,13 @@ var _createClass = function () { function defineProperties(target, props) { for 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */
 
 
-var _lodash = require("lodash");
+var _lodash = require('lodash');
 
 var _lodash2 = _interopRequireDefault(_lodash);
+
+var _shallowEqual = require('fbjs/lib/shallowEqual');
+
+var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32,19 +36,19 @@ var Store = exports.Store = function () {
     }
 
     _createClass(Store, [{
-        key: "getFullHistory",
+        key: 'getFullHistory',
         value: function getFullHistory() {
             return _lodash2.default.concat(this.stateHistory, [this.state]);
         }
     }, {
-        key: "getPreviousState",
+        key: 'getPreviousState',
         value: function getPreviousState() {
             var index = this.stateHistory.length - 1;
 
             return this.stateHistory[index];
         }
     }, {
-        key: "setState",
+        key: 'setState',
         value: function setState(newState) {
             var historyMode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
@@ -66,7 +70,9 @@ var Store = exports.Store = function () {
             for (var property in this.state) {
                 var newProperty = this.state[property];
                 var oldProperty = oldState[property];
-                if (newProperty !== oldProperty) {
+
+                if ((0, _shallowEqual2.default)(newProperty, oldProperty)) {
+                    //if(newProperty !== oldProperty){
                     // changes.push(property);
                     this.triggerChangeCallbacks(property, newProperty, oldProperty);
                     anyChanges = true;
@@ -76,7 +82,7 @@ var Store = exports.Store = function () {
             if (anyChanges) this.triggerChangeCallbacks("__anyChange", this.state, oldState);
         }
     }, {
-        key: "subscribeToChanges",
+        key: 'subscribeToChanges',
         value: function subscribeToChanges(callback) {
             var property = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "__anyChange";
 
@@ -89,7 +95,7 @@ var Store = exports.Store = function () {
             }
         }
     }, {
-        key: "triggerChangeCallbacks",
+        key: 'triggerChangeCallbacks',
         value: function triggerChangeCallbacks(property, newValue, oldValue) {
             if (!this.onChangeCallbacks[property]) return;
 
@@ -98,7 +104,7 @@ var Store = exports.Store = function () {
             });
         }
     }, {
-        key: "unSubscribeToChanges",
+        key: 'unSubscribeToChanges',
         value: function unSubscribeToChanges(callback) {
             var property = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "__anyChange";
 

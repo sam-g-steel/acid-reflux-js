@@ -26,18 +26,12 @@ export class Store{
     }
 
     setState(newState, historyMode = true){
-        //
-        newState.__time = Date.now();
 
         // Save the old state
         let oldState = this.state;
 
-        if(historyMode == true){
-            this.stateHistory.push(oldState);
-        }
-
         // Update the state
-        this.state = _.assign({}, this.state, newState);
+        this.state = _.assign({}, oldState, newState);
 
         // Generate list of shallow changes
         let anyChanges = false;
@@ -53,7 +47,16 @@ export class Store{
             }
         }
 
-        if(anyChanges) this.triggerChangeCallbacks("__anyChange", this.state, oldState);
+        if(anyChanges){
+            //
+            newState.__time = Date.now();
+
+            if(historyMode == true){
+                this.stateHistory.push(oldState);
+            }
+
+            this.triggerChangeCallbacks("__anyChange", this.state, oldState);
+        }
     }
 
     subscribeToChanges(callback, property = "__anyChange"){

@@ -52,18 +52,12 @@ var Store = exports.Store = function () {
         value: function setState(newState) {
             var historyMode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
-            //
-            newState.__time = Date.now();
 
             // Save the old state
             var oldState = this.state;
 
-            if (historyMode == true) {
-                this.stateHistory.push(oldState);
-            }
-
             // Update the state
-            this.state = _lodash2.default.assign({}, this.state, newState);
+            this.state = _lodash2.default.assign({}, oldState, newState);
 
             // Generate list of shallow changes
             var anyChanges = false;
@@ -79,7 +73,16 @@ var Store = exports.Store = function () {
                 }
             }
 
-            if (anyChanges) this.triggerChangeCallbacks("__anyChange", this.state, oldState);
+            if (anyChanges) {
+                //
+                newState.__time = Date.now();
+
+                if (historyMode == true) {
+                    this.stateHistory.push(oldState);
+                }
+
+                this.triggerChangeCallbacks("__anyChange", this.state, oldState);
+            }
         }
     }, {
         key: 'subscribeToChanges',

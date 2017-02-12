@@ -1,6 +1,6 @@
 {
   "name": "acid-reflux-js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple library for uni-directional dataflow application architecture... inspired by Flux and Redux",
   "main": "index.js",
   "scripts": {

@@ -25,11 +25,18 @@ var Store = exports.Store = function () {
         this.onChangeCallbacks = {
             __anyChange: []
         };
-        this.state = {};
+        this.state = {
+            __time: Date.now()
+        };
         this.stateHistory = [];
     }
 
     _createClass(Store, [{
+        key: "getFullHistory",
+        value: function getFullHistory() {
+            return _lodash2.default.concat(this.stateHistory, [this.state]);
+        }
+    }, {
         key: "getPreviousState",
         value: function getPreviousState() {
             var index = this.stateHistory.length - 1;
@@ -40,6 +47,9 @@ var Store = exports.Store = function () {
         key: "setState",
         value: function setState(newState) {
             var historyMode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+
+            //
+            newState.__time = Date.now();
 
             // Save the old state
             var oldState = this.state;

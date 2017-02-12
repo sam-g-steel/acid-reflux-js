@@ -16,16 +16,18 @@ Example code...
     });
     
     store.subscribeToChanges((newVal, oldVal)=>{
-        console.log("isLogedIn changed to...", newVal)
-    }, "isLogedIn");
+        console.log("isLoggedIn changed to...", newVal)
+    }, "isLoggedIn");
     
     // Set time
     store.setState({
         time: Date.now()
     });
     
-    // Set time and isLogedIn
+    // Set time and isLoggedIn
     store.setState({
         time: Date.now(),
-        isLogedIn: true
+        isLoggedIn: true
     });
+    
+    console.log("Full History", store.getFullHistory());

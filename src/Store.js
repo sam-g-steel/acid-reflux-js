@@ -8,8 +8,14 @@ export class Store{
         this.onChangeCallbacks = {
             __anyChange: []
         };
-        this.state = {};
+        this.state = {
+            __time: Date.now()
+        };
         this.stateHistory = [];
+    }
+
+    getFullHistory(){
+        return _.concat(this.stateHistory, [this.state]);
     }
 
     getPreviousState(){
@@ -19,6 +25,9 @@ export class Store{
     }
 
     setState(newState, historyMode = true){
+        //
+        newState.__time = Date.now();
+
         // Save the old state
         let oldState = this.state;
 

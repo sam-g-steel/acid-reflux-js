@@ -14,9 +14,9 @@ var _lodash = require('lodash');
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _shallowEqual = require('fbjs/lib/shallowEqual');
+var _areEqual = require('fbjs/lib/areEqual');
 
-var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
+var _areEqual2 = _interopRequireDefault(_areEqual);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -59,15 +59,14 @@ var Store = exports.Store = function () {
             // Update the state
             this.state = _lodash2.default.assign({}, oldState, newState);
 
-            // Generate list of shallow changes
+            // Loop through state properties looking for changes
             var anyChanges = false;
             for (var property in this.state) {
                 var newProperty = this.state[property];
                 var oldProperty = oldState[property];
 
-                if ((0, _shallowEqual2.default)(newProperty, oldProperty)) {
-                    //if(newProperty !== oldProperty){
-                    // changes.push(property);
+                // If there is a change trigger the properties change callbacks
+                if (!(0, _areEqual2.default)(newProperty, oldProperty)) {
                     this.triggerChangeCallbacks(property, newProperty, oldProperty);
                     anyChanges = true;
                 }
@@ -75,7 +74,7 @@ var Store = exports.Store = function () {
 
             if (anyChanges) {
                 //
-                newState.__time = Date.now();
+                this.state.__time = Date.now();
 
                 if (historyMode == true) {
                     this.stateHistory.push(oldState);

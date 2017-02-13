@@ -2,7 +2,7 @@
  * Created by sam_g on 2/7/2017.
  */
 import _ from 'lodash';
-import shallowEqual from 'fbjs/lib/shallowEqual';
+import areEqual from 'fbjs/lib/areEqual';
 
 export class Store{
     constructor(){
@@ -33,15 +33,14 @@ export class Store{
         // Update the state
         this.state = _.assign({}, oldState, newState);
 
-        // Generate list of shallow changes
+        // Loop through state properties looking for changes
         let anyChanges = false;
         for(let property in this.state){
             let newProperty = this.state[property];
             let oldProperty = oldState[property];
 
-            if( shallowEqual(newProperty, oldProperty)){
-            //if(newProperty !== oldProperty){
-                // changes.push(property);
+            // If there is a change trigger the properties change callbacks
+            if(!areEqual(newProperty, oldProperty)){
                 this.triggerChangeCallbacks(property, newProperty, oldProperty);
                 anyChanges = true;
             }
@@ -49,7 +48,7 @@ export class Store{
 
         if(anyChanges){
             //
-            newState.__time = Date.now();
+            this.state.__time = Date.now();
 
             if(historyMode == true){
                 this.stateHistory.push(oldState);

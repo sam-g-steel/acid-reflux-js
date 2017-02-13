@@ -31,3 +31,14 @@ Example code...
     });
     
     console.log("Full History", store.getFullHistory());
+    
+#Latest Changes
+
+**v0.1.4**
+
+Improved changed detection, now if a state property changes from one object to another that is identical, no change is registered
+
+#Future Plans
+
+- More Docs
+- State change playback mode

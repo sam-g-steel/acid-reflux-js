@@ -29,3 +29,5 @@ store.setState({
 
 console.log("History", store.stateHistory);
 console.log("Full History", store.getFullHistory());
+
+console.log("Change Log", store.getChangeLog());

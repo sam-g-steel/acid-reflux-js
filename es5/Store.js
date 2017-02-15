@@ -50,6 +50,8 @@ var Store = exports.Store = function () {
     }, {
         key: 'setState',
         value: function setState(newState) {
+            var _this = this;
+
             var historyMode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
 
@@ -59,20 +61,23 @@ var Store = exports.Store = function () {
             // Update the state
             this.state = _lodash2.default.assign({}, oldState, newState);
 
-            // Loop through state properties looking for changes
-            var anyChanges = false;
-            for (var property in this.state) {
-                var newProperty = this.state[property];
+            var changes = Store.getChangeList(oldState, this.state);
+
+            // Loop through list of changes and trigger their respective callbacks
+            changes.forEach(function (o) {
+                // Get the name of the changed property
+                var property = o.property;
+
+                // Get the new and old values of the property
+
+                var newProperty = _this.state[property];
                 var oldProperty = oldState[property];
 
-                // If there is a change trigger the properties change callbacks
-                if (!(0, _areEqual2.default)(newProperty, oldProperty)) {
-                    this.triggerChangeCallbacks(property, newProperty, oldProperty);
-                    anyChanges = true;
-                }
-            }
+                // Trigger the property's callback
+                _this._triggerChangeCallbacks(property, newProperty, oldProperty);
+            });
 
-            if (anyChanges) {
+            if (changes.length) {
                 //
                 this.state.__time = Date.now();
 
@@ -80,7 +85,7 @@ var Store = exports.Store = function () {
                     this.stateHistory.push(oldState);
                 }
 
-                this.triggerChangeCallbacks("__anyChange", this.state, oldState);
+                this._triggerChangeCallbacks("__anyChange", this.state, oldState);
             }
         }
     }, {
@@ -97,15 +102,6 @@ var Store = exports.Store = function () {
             }
         }
     }, {
-        key: 'triggerChangeCallbacks',
-        value: function triggerChangeCallbacks(property, newValue, oldValue) {
-            if (!this.onChangeCallbacks[property]) return;
-
-            this.onChangeCallbacks[property].forEach(function (callback) {
-                return callback(newValue, oldValue, property);
-            });
-        }
-    }, {
         key: 'unSubscribeToChanges',
         value: function unSubscribeToChanges(callback) {
             var property = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "__anyChange";
@@ -114,6 +110,59 @@ var Store = exports.Store = function () {
             if (callbackList == undefined) return;
 
             this.onChangeCallbacks[property] = _lodash2.default.pull(callbackList, callback);
+        }
+    }, {
+        key: '_triggerChangeCallbacks',
+        value: function _triggerChangeCallbacks(property, newValue, oldValue) {
+            if (!this.onChangeCallbacks[property]) return;
+
+            this.onChangeCallbacks[property].forEach(function (callback) {
+                return callback(newValue, oldValue, property);
+            });
+        }
+    }, {
+        key: 'getChangeLog',
+        value: function getChangeLog() {
+            var fullHistory = this.getFullHistory();
+            var changes = [""];
+
+            fullHistory.forEach(function (o, i) {
+                if (i == 0) return;
+
+                changes.push(Store.getChangeLog(fullHistory[i - 1], o));
+            });
+
+            return changes.join("\n------------\n");
+        }
+    }], [{
+        key: 'getChangeList',
+        value: function getChangeList(oldState, newState) {
+            // Loop through state properties looking for changes
+            var changes = [];
+            for (var property in newState) {
+                var newProperty = newState[property];
+                var oldProperty = oldState[property];
+
+                // Generate change list
+                if (!(0, _areEqual2.default)(newProperty, oldProperty)) {
+                    changes.push({
+                        property: property,
+                        isNew: oldProperty == undefined || oldProperty == null
+                    });
+                }
+            }
+
+            return changes;
+        }
+    }, {
+        key: 'getChangeLog',
+        value: function getChangeLog(oldState, newState) {
+            var changes = this.getChangeList(oldState, newState);
+            var log = changes.map(function (o) {
+                if (o.isNew) return 'Added new property "' + o.property + '"';else return 'Changed value of "' + o.property + '"';
+            });
+
+            return log.join("\n");
         }
     }]);
 

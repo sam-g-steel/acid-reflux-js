@@ -33,20 +33,22 @@ export class Store{
         // Update the state
         this.state = _.assign({}, oldState, newState);
 
-        // Loop through state properties looking for changes
-        let anyChanges = false;
-        for(let property in this.state){
+        let changes = Store.getChangeList(oldState, this.state);
+
+        // Loop through list of changes and trigger their respective callbacks
+        changes.forEach((o)=>{
+            // Get the name of the changed property
+            let {property} = o;
+
+            // Get the new and old values of the property
             let newProperty = this.state[property];
             let oldProperty = oldState[property];
 
-            // If there is a change trigger the properties change callbacks
-            if(!areEqual(newProperty, oldProperty)){
-                this.triggerChangeCallbacks(property, newProperty, oldProperty);
-                anyChanges = true;
-            }
-        }
+            // Trigger the property's callback
+            this._triggerChangeCallbacks(property, newProperty, oldProperty);
+        });
 
-        if(anyChanges){
+        if(changes.length){
             //
             this.state.__time = Date.now();
 
@@ -54,7 +56,7 @@ export class Store{
                 this.stateHistory.push(oldState);
             }
 
-            this.triggerChangeCallbacks("__anyChange", this.state, oldState);
+            this._triggerChangeCallbacks("__anyChange", this.state, oldState);
         }
     }
 
@@ -68,17 +70,60 @@ export class Store{
         }
     }
 
-    triggerChangeCallbacks(property, newValue, oldValue){
-        if(!this.onChangeCallbacks[property]) return;
-
-        this.onChangeCallbacks[property].forEach((callback)=>callback(newValue, oldValue, property));
-    }
-
     unSubscribeToChanges(callback, property = "__anyChange"){
         let callbackList = this.onChangeCallbacks[property];
         if(callbackList == undefined) return;
 
         this.onChangeCallbacks[property] = _.pull(callbackList, callback);
+    }
+
+    static getChangeList(oldState, newState){
+        // Loop through state properties looking for changes
+        let changes = [];
+        for(let property in newState){
+            let newProperty = newState[property];
+            let oldProperty = oldState[property];
+
+            // Generate change list
+            if(!areEqual(newProperty, oldProperty)){
+                changes.push({
+                    property: property,
+                    isNew: oldProperty == undefined || oldProperty == null
+                });
+            }
+        }
+
+        return changes;
+    }
+
+    static getChangeLog(oldState, newState){
+        let changes = this.getChangeList(oldState, newState);
+        let log = changes.map((o)=>{
+            if(o.isNew) return`Added new property "${o.property}"`;
+            else return`Changed value of "${o.property}"`;
+        });
+
+
+        return log.join("\n");
+    }
+
+    _triggerChangeCallbacks(property, newValue, oldValue){
+        if(!this.onChangeCallbacks[property]) return;
+
+        this.onChangeCallbacks[property].forEach((callback)=>callback(newValue, oldValue, property));
+    }
+
+    getChangeLog(){
+        let fullHistory = this.getFullHistory();
+        let changes = [];
+
+        fullHistory.forEach((o, i)=>{
+            if(i == 0) return;
+
+            changes.push(Store.getChangeLog(fullHistory[i-1], o));
+        });
+
+        return changes.join("\n------------\n");
     }
 }
 

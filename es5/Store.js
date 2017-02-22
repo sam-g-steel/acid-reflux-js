@@ -124,7 +124,7 @@ var Store = exports.Store = function () {
         key: 'getChangeLog',
         value: function getChangeLog() {
             var fullHistory = this.getFullHistory();
-            var changes = [""];
+            var changes = [];
 
             fullHistory.forEach(function (o, i) {
                 if (i == 0) return;
@@ -142,6 +142,8 @@ var Store = exports.Store = function () {
             for (var property in newState) {
                 var newProperty = newState[property];
                 var oldProperty = oldState[property];
+
+                if (property == "__time") continue;
 
                 // Generate change list
                 if (!(0, _areEqual2.default)(newProperty, oldProperty)) {

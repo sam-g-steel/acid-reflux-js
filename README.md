@@ -34,6 +34,16 @@ Example code...
     
 #Latest Changes
 
+**v0.1.6**
+
+Updated Change Log functions... internal property "__time" is now ignored
+
+Log looks cleaner
+
+**v0.1.5**
+
+Added Change Log functions... More to come in the docs!
+
 **v0.1.4**
 
 Improved changed detection, now if a state property changes from one object to another that is identical, no change is registered

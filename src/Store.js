@@ -84,6 +84,8 @@ export class Store{
             let newProperty = newState[property];
             let oldProperty = oldState[property];
 
+            if(property == "__time") continue;
+
             // Generate change list
             if(!areEqual(newProperty, oldProperty)){
                 changes.push({

@@ -3,7 +3,5 @@
  */
 import {Store} from './Store';
 
-let aStore = Store;
-
 export {Store} from './Store';
-export default aStore;
+export default Store;

@@ -4,27 +4,49 @@
 import _ from 'lodash';
 import areEqual from 'fbjs/lib/areEqual';
 
+/** Simple data store with history recording and on change callbacks */
 export class Store{
     constructor(){
         this.onChangeCallbacks = {
             __anyChange: []
         };
+
         this.state = {
             __time: Date.now()
         };
+
+        /** @private An array of states from the first to the last, excluding the present state */
         this.stateHistory = [];
     }
 
+    /**
+     * Get an array of states from the first to the last
+     * @return {object[]} An array of states
+     */
     getFullHistory(){
         return _.concat(this.stateHistory, [this.state]);
     }
 
+    /**
+     * Get the previous state of the store
+     * @return {object} previous state
+     */
     getPreviousState(){
         let index = this.stateHistory.length - 1;
 
         return this.stateHistory[index];
     }
 
+
+    /**
+     * Set the store's state and optionally save the last state to history
+     * @param {object} newState
+     * @param {boolean} historyMode
+     * @example <caption>Set state and record previous state to history</caption>
+     * myStore.setState({userName: "John Doe"});
+     * @example <caption>Set state and forget about recording previous state to history</caption>
+     * myStore.setState({userName: "Billy Bob", false});
+     */
     setState(newState, historyMode = true){
 
         // Save the old state

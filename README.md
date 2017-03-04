@@ -34,15 +34,23 @@ Example code...
     
 #Latest Changes
 
+**v0.1.7**
+
+Added more docs using ESdoc [wip]
+
+
+
 **v0.1.6**
 
 Updated Change Log functions... internal property "__time" is now ignored
 
 Log looks cleaner
 
+
 **v0.1.5**
 
 Added Change Log functions... More to come in the docs!
+
 
 **v0.1.4**
 

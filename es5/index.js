@@ -13,10 +13,5 @@ Object.defineProperty(exports, 'Store', {
     return _Store.Store;
   }
 });
-
-
-var aStore = _Store.Store; /**
-                            * Created by sam_g on 2/7/2017.
-                            */
-exports.default = aStore;
+exports.default = _Store.Store;
 //# sourceMappingURL=index.js.map

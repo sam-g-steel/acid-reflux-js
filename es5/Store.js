@@ -22,6 +22,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+/** Simple data store with history recording and on change callbacks */
 var Store = exports.Store = function () {
     function Store() {
         _classCallCheck(this, Store);
@@ -29,17 +30,32 @@ var Store = exports.Store = function () {
         this.onChangeCallbacks = {
             __anyChange: []
         };
+
         this.state = {
             __time: Date.now()
         };
+
+        /** @private An array of states from the first to the last, excluding the present state */
         this.stateHistory = [];
     }
+
+    /**
+     * Get an array of states from the first to the last
+     * @return {object[]} An array of states
+     */
+
 
     _createClass(Store, [{
         key: 'getFullHistory',
         value: function getFullHistory() {
             return _lodash2.default.concat(this.stateHistory, [this.state]);
         }
+
+        /**
+         * Get the previous state of the store
+         * @return {object} previous state
+         */
+
     }, {
         key: 'getPreviousState',
         value: function getPreviousState() {
@@ -47,6 +63,17 @@ var Store = exports.Store = function () {
 
             return this.stateHistory[index];
         }
+
+        /**
+         * Set the store's state and optionally save the last state to history
+         * @param {object} newState
+         * @param {boolean} historyMode
+         * @example <caption>Set state and record previous state to history</caption>
+         * myStore.setState({userName: "John Doe"});
+         * @example <caption>Set state and forget about recording previous state to history</caption>
+         * myStore.setState({userName: "Billy Bob", false});
+         */
+
     }, {
         key: 'setState',
         value: function setState(newState) {

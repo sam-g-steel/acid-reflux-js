@@ -1,8 +1,48 @@
-/**
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/Store.js | API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <a data-ice="repoURL" href="https://github.com/sam-g-steel/acid-reflux-js" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/Store.js~Store.html">Store</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/Store.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
  * Created by sam_g on 2/7/2017.
  */
-import _ from 'lodash';
-import areEqual from 'fbjs/lib/areEqual';
+import _ from &apos;lodash&apos;;
+import areEqual from &apos;fbjs/lib/areEqual&apos;;
 
 /** Simple data store with history recording and on change callbacks */
 export class Store{
@@ -41,13 +81,13 @@ export class Store{
 
 
     /**
-     * Set the store's state and optionally save the last state to history
+     * Set the store&apos;s state and optionally save the last state to history
      * @param {object} newState
      * @param {boolean} historyMode
-     * @example <caption>Set state and record previous state to history</caption>
-     * myStore.setState({userName: "John Doe"});
-     * @example <caption>Set state and forget about recording previous state to history</caption>
-     * myStore.setState({userName: "Billy Bob", false});
+     * @example &lt;caption&gt;Set state and record previous state to history&lt;/caption&gt;
+     * myStore.setState({userName: &quot;John Doe&quot;});
+     * @example &lt;caption&gt;Set state and forget about recording previous state to history&lt;/caption&gt;
+     * myStore.setState({userName: &quot;Billy Bob&quot;, false});
      */
     setState(newState, historyMode = true){
 
@@ -60,7 +100,7 @@ export class Store{
         let changes = Store.getChangeList(oldState, this.state);
 
         // Loop through list of changes and trigger their respective callbacks
-        changes.forEach((o)=>{
+        changes.forEach((o)=&gt;{
             // Get the name of the changed property
             let {property} = o;
 
@@ -68,7 +108,7 @@ export class Store{
             let newProperty = this.state[property];
             let oldProperty = oldState[property];
 
-            // Trigger the property's callback
+            // Trigger the property&apos;s callback
             this._triggerChangeCallbacks(property, newProperty, oldProperty);
         });
 
@@ -80,7 +120,7 @@ export class Store{
                 this.stateHistory.push(oldState);
             }
 
-            this._triggerChangeCallbacks("__anyChange", this.state, oldState);
+            this._triggerChangeCallbacks(&quot;__anyChange&quot;, this.state, oldState);
         }
     }
 
@@ -88,20 +128,20 @@ export class Store{
      * Subscribe to changes in the state
      * @param {function} callback
      * @param {string} property - Name of the property to watch
-     * @example <caption>Trigger callback when userName is updated</caption>
-     * myStore.subscribeToChanges((newVal)=>{ console.log("userName changed to...", newVal)}, "userName");
+     * @example &lt;caption&gt;Trigger callback when userName is updated&lt;/caption&gt;
+     * myStore.subscribeToChanges((newVal)=&gt;{ console.log(&quot;userName changed to...&quot;, newVal)}, &quot;userName&quot;);
      */
-    subscribeToChanges(callback, property = "__anyChange"){
+    subscribeToChanges(callback, property = &quot;__anyChange&quot;){
         if(this.onChangeCallbacks[property] == undefined) this.onChangeCallbacks[property] = [];
 
-        if(typeof callback != "function"){
-            console.error("Callback given is not a function as expected");
+        if(typeof callback != &quot;function&quot;){
+            console.error(&quot;Callback given is not a function as expected&quot;);
         }else {
             this.onChangeCallbacks[property].push(callback);
         }
     }
 
-    unSubscribeToChanges(callback, property = "__anyChange"){
+    unSubscribeToChanges(callback, property = &quot;__anyChange&quot;){
         let callbackList = this.onChangeCallbacks[property];
         if(callbackList == undefined) return;
 
@@ -121,7 +161,7 @@ export class Store{
             let newProperty = newState[property];
             let oldProperty = oldState[property];
 
-            if(property == "__time") continue;
+            if(property == &quot;__time&quot;) continue;
 
             // Generate change list
             if(!areEqual(newProperty, oldProperty)){
@@ -143,33 +183,49 @@ export class Store{
      */
     static getChangeLog(oldState, newState){
         let changes = this.getChangeList(oldState, newState);
-        let log = changes.map((o)=>{
-            if(o.isNew) return`Added new property "${o.property}"`;
-            else return`Changed value of "${o.property}"`;
+        let log = changes.map((o)=&gt;{
+            if(o.isNew) return`Added new property &quot;${o.property}&quot;`;
+            else return`Changed value of &quot;${o.property}&quot;`;
         });
 
 
-        return log.join("\n");
+        return log.join(&quot;\n&quot;);
     }
 
     _triggerChangeCallbacks(property, newValue, oldValue){
         if(!this.onChangeCallbacks[property]) return;
 
-        this.onChangeCallbacks[property].forEach((callback)=>callback(newValue, oldValue, property));
+        this.onChangeCallbacks[property].forEach((callback)=&gt;callback(newValue, oldValue, property));
     }
 
     getChangeLog(){
         let fullHistory = this.getFullHistory();
         let changes = [];
 
-        fullHistory.forEach((o, i)=>{
+        fullHistory.forEach((o, i)=&gt;{
             if(i == 0) return;
 
             changes.push(Store.getChangeLog(fullHistory[i-1], o));
         });
 
-        return changes.join("\n------------\n");
+        return changes.join(&quot;\n------------\n&quot;);
     }
 }
 
-export default Store;
+export default Store;</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

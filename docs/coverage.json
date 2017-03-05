@@ -1,0 +1,16 @@
+{
+  "coverage": "72.72%",
+  "expectCount": 11,
+  "actualCount": 8,
+  "files": {
+    "src/Store.js": {
+      "expectCount": 11,
+      "actualCount": 8,
+      "undocumentLines": [
+        9,
+        161,
+        104
+      ]
+    }
+  }
+}

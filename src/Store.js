@@ -14,8 +14,10 @@ export class Store{
 
         /** @property {object} [state={}] state - An object that represents the present state */
         this.state = {
-            __time: Date.now()
         };
+
+        /** @private */
+        this.state.__time = Date.now();
 
         /** @private An array of states from the first to the last, excluding the present state */
         this.stateHistory = [];
@@ -86,7 +88,7 @@ export class Store{
 
     /**
      * Subscribe to changes in the state
-     * @param {function} callback
+     * @param {function(newValue: *, oldValue: *)} callback
      * @param {string} property - Name of the property to watch
      * @example <caption>Trigger callback when userName is updated</caption>
      * myStore.subscribeToChanges((newVal)=>{ console.log("userName changed to...", newVal)}, "userName");
@@ -101,6 +103,11 @@ export class Store{
         }
     }
 
+    /**
+     * Remove subscription to changes in the state
+     * @param {function} callback
+     * @param {string} property - Name of the property to unsubscribe from
+     */
     unSubscribeToChanges(callback, property = "__anyChange"){
         let callbackList = this.onChangeCallbacks[property];
         if(callbackList == undefined) return;

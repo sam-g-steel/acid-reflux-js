@@ -3,6 +3,8 @@ A simple library for uni-directional dataflow application architecture... inspir
 
 [![npm version](https://badge.fury.io/js/acid-reflux-js.svg)](https://badge.fury.io/js/acid-reflux-js)
 
+See more in depth docs [here](https://sam-g-steel.github.io/acid-reflux-js/)
+
 Example code...
 
     var acidRefluxJS = require("acid-reflux-js")

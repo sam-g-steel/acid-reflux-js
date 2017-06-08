@@ -1,0 +1,40 @@
+{
+  "baseUrl": "types",
+  "typeRoots": ["types"],
+
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "es2016",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016"
+    ],
+    "jsx": "preserve",
+    "target": "es2016",
+    "module": "es2015",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true
+  },
+
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    /* ...
+    "useBabel" : true,
+    "useCache " : true,*/
+    "ignoreDiagnostics": [8014]
+  }
+}

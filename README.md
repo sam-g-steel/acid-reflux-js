@@ -36,6 +36,14 @@ Example code...
     
 #Latest Changes
 
+
+
+**v0.2.0**
+
+Added State.maxHistoryLength
+Added state binding
+
+
 **v0.1.7**
 
 Added more docs using ESdoc [wip]

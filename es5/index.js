@@ -15,3 +15,4 @@ Object.defineProperty(exports, 'Store', {
 });
 exports.default = _Store.Store;
 //# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.js.map

@@ -56,7 +56,7 @@ var Store = exports.Store = function () {
         value: function trimHistory() {
             var length = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 32;
 
-            this.stateHistory.slice(-length);
+            this.stateHistory = this.stateHistory.slice(-length);
         }
     }, {
         key: 'bindState',

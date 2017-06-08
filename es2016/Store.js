@@ -27,7 +27,7 @@ export class Store {
         return _.concat(this.stateHistory, [this.state]);
     }
     trimHistory(length = 32) {
-        this.stateHistory.slice(-length);
+        this.stateHistory = this.stateHistory.slice(-length);
     }
     bindState(stateParent) {
         this._boundParents.push(stateParent);

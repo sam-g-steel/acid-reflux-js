@@ -1,410 +1,422 @@
 window.esdocSearchIndex = [
   [
-    "acid-reflux-js/src/store.js~store",
-    "class/src/Store.js~Store.html",
-    "<span>Store</span> <span class=\"search-result-import-path\">acid-reflux-js/src/Store.js</span>",
+    "acid-reflux-js/es2016/store.js~store",
+    "class/es2016/Store.js~Store.html",
+    "<span>Store</span> <span class=\"search-result-import-path\">acid-reflux-js/es2016/Store.js</span>",
     "class"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~array",
+    "es2016/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "BuiltinExternal/ECMAScriptExternal.js~Array",
+    "es2016/.external-ecmascript.js~Array",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~arraybuffer",
+    "es2016/.external-ecmascript.js~arraybuffer",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "BuiltinExternal/ECMAScriptExternal.js~ArrayBuffer",
+    "es2016/.external-ecmascript.js~ArrayBuffer",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~boolean",
+    "es2016/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "BuiltinExternal/ECMAScriptExternal.js~Boolean",
+    "es2016/.external-ecmascript.js~Boolean",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~dataview",
+    "es2016/.external-ecmascript.js~dataview",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "BuiltinExternal/ECMAScriptExternal.js~DataView",
+    "es2016/.external-ecmascript.js~DataView",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~date",
+    "es2016/.external-ecmascript.js~date",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "BuiltinExternal/ECMAScriptExternal.js~Date",
+    "es2016/.external-ecmascript.js~Date",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~error",
+    "es2016/.external-ecmascript.js~error",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "BuiltinExternal/ECMAScriptExternal.js~Error",
+    "es2016/.external-ecmascript.js~Error",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~evalerror",
+    "es2016/.external-ecmascript.js~evalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "BuiltinExternal/ECMAScriptExternal.js~EvalError",
+    "es2016/.external-ecmascript.js~EvalError",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~float32array",
+    "es2016/.external-ecmascript.js~float32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "BuiltinExternal/ECMAScriptExternal.js~Float32Array",
+    "es2016/.external-ecmascript.js~Float32Array",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~float64array",
+    "es2016/.external-ecmascript.js~float64array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "BuiltinExternal/ECMAScriptExternal.js~Float64Array",
+    "es2016/.external-ecmascript.js~Float64Array",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~function",
+    "es2016/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "BuiltinExternal/ECMAScriptExternal.js~Function",
+    "es2016/.external-ecmascript.js~Function",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~generator",
+    "es2016/.external-ecmascript.js~generator",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "BuiltinExternal/ECMAScriptExternal.js~Generator",
+    "es2016/.external-ecmascript.js~Generator",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~generatorfunction",
+    "es2016/.external-ecmascript.js~generatorfunction",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "BuiltinExternal/ECMAScriptExternal.js~GeneratorFunction",
+    "es2016/.external-ecmascript.js~GeneratorFunction",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~infinity",
+    "es2016/.external-ecmascript.js~infinity",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "BuiltinExternal/ECMAScriptExternal.js~Infinity",
+    "es2016/.external-ecmascript.js~Infinity",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~int16array",
+    "es2016/.external-ecmascript.js~int16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "BuiltinExternal/ECMAScriptExternal.js~Int16Array",
+    "es2016/.external-ecmascript.js~Int16Array",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~int32array",
+    "es2016/.external-ecmascript.js~int32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "BuiltinExternal/ECMAScriptExternal.js~Int32Array",
+    "es2016/.external-ecmascript.js~Int32Array",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~int8array",
+    "es2016/.external-ecmascript.js~int8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "BuiltinExternal/ECMAScriptExternal.js~Int8Array",
+    "es2016/.external-ecmascript.js~Int8Array",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~internalerror",
+    "es2016/.external-ecmascript.js~internalerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "BuiltinExternal/ECMAScriptExternal.js~InternalError",
+    "es2016/.external-ecmascript.js~InternalError",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~json",
+    "es2016/.external-ecmascript.js~json",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "BuiltinExternal/ECMAScriptExternal.js~JSON",
+    "es2016/.external-ecmascript.js~JSON",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~map",
+    "es2016/.external-ecmascript.js~map",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "BuiltinExternal/ECMAScriptExternal.js~Map",
+    "es2016/.external-ecmascript.js~Map",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~nan",
+    "es2016/.external-ecmascript.js~nan",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "BuiltinExternal/ECMAScriptExternal.js~NaN",
+    "es2016/.external-ecmascript.js~NaN",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~number",
+    "es2016/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "BuiltinExternal/ECMAScriptExternal.js~Number",
+    "es2016/.external-ecmascript.js~Number",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~object",
+    "es2016/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "BuiltinExternal/ECMAScriptExternal.js~Object",
+    "es2016/.external-ecmascript.js~Object",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~promise",
+    "es2016/.external-ecmascript.js~promise",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "BuiltinExternal/ECMAScriptExternal.js~Promise",
+    "es2016/.external-ecmascript.js~Promise",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~proxy",
+    "es2016/.external-ecmascript.js~proxy",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "BuiltinExternal/ECMAScriptExternal.js~Proxy",
+    "es2016/.external-ecmascript.js~Proxy",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~rangeerror",
+    "es2016/.external-ecmascript.js~rangeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "BuiltinExternal/ECMAScriptExternal.js~RangeError",
+    "es2016/.external-ecmascript.js~RangeError",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~referenceerror",
+    "es2016/.external-ecmascript.js~referenceerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "BuiltinExternal/ECMAScriptExternal.js~ReferenceError",
+    "es2016/.external-ecmascript.js~ReferenceError",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~reflect",
+    "es2016/.external-ecmascript.js~reflect",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "BuiltinExternal/ECMAScriptExternal.js~Reflect",
+    "es2016/.external-ecmascript.js~Reflect",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~regexp",
+    "es2016/.external-ecmascript.js~regexp",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "BuiltinExternal/ECMAScriptExternal.js~RegExp",
+    "es2016/.external-ecmascript.js~RegExp",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~set",
+    "es2016/.external-ecmascript.js~set",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "BuiltinExternal/ECMAScriptExternal.js~Set",
+    "es2016/.external-ecmascript.js~Set",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~string",
+    "es2016/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "BuiltinExternal/ECMAScriptExternal.js~String",
+    "es2016/.external-ecmascript.js~String",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~symbol",
+    "es2016/.external-ecmascript.js~symbol",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "BuiltinExternal/ECMAScriptExternal.js~Symbol",
+    "es2016/.external-ecmascript.js~Symbol",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~syntaxerror",
+    "es2016/.external-ecmascript.js~syntaxerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "BuiltinExternal/ECMAScriptExternal.js~SyntaxError",
+    "es2016/.external-ecmascript.js~SyntaxError",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~typeerror",
+    "es2016/.external-ecmascript.js~typeerror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "BuiltinExternal/ECMAScriptExternal.js~TypeError",
+    "es2016/.external-ecmascript.js~TypeError",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~urierror",
+    "es2016/.external-ecmascript.js~urierror",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "BuiltinExternal/ECMAScriptExternal.js~URIError",
+    "es2016/.external-ecmascript.js~URIError",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~uint16array",
+    "es2016/.external-ecmascript.js~uint16array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "BuiltinExternal/ECMAScriptExternal.js~Uint16Array",
+    "es2016/.external-ecmascript.js~Uint16Array",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~uint32array",
+    "es2016/.external-ecmascript.js~uint32array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "BuiltinExternal/ECMAScriptExternal.js~Uint32Array",
+    "es2016/.external-ecmascript.js~Uint32Array",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~uint8array",
+    "es2016/.external-ecmascript.js~uint8array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "BuiltinExternal/ECMAScriptExternal.js~Uint8Array",
+    "es2016/.external-ecmascript.js~Uint8Array",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~uint8clampedarray",
+    "es2016/.external-ecmascript.js~uint8clampedarray",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "BuiltinExternal/ECMAScriptExternal.js~Uint8ClampedArray",
+    "es2016/.external-ecmascript.js~Uint8ClampedArray",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~weakmap",
+    "es2016/.external-ecmascript.js~weakmap",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "BuiltinExternal/ECMAScriptExternal.js~WeakMap",
+    "es2016/.external-ecmascript.js~WeakMap",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~weakset",
+    "es2016/.external-ecmascript.js~weakset",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "BuiltinExternal/ECMAScriptExternal.js~WeakSet",
+    "es2016/.external-ecmascript.js~WeakSet",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~boolean",
+    "es2016/.external-ecmascript.js~boolean",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "BuiltinExternal/ECMAScriptExternal.js~boolean",
+    "es2016/.external-ecmascript.js~boolean",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~function",
+    "es2016/.external-ecmascript.js~function",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "BuiltinExternal/ECMAScriptExternal.js~function",
+    "es2016/.external-ecmascript.js~function",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~null",
+    "es2016/.external-ecmascript.js~null",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "BuiltinExternal/ECMAScriptExternal.js~null",
+    "es2016/.external-ecmascript.js~null",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~number",
+    "es2016/.external-ecmascript.js~number",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "BuiltinExternal/ECMAScriptExternal.js~number",
+    "es2016/.external-ecmascript.js~number",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~object",
+    "es2016/.external-ecmascript.js~object",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "BuiltinExternal/ECMAScriptExternal.js~object",
+    "es2016/.external-ecmascript.js~object",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~string",
+    "es2016/.external-ecmascript.js~string",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "BuiltinExternal/ECMAScriptExternal.js~string",
+    "es2016/.external-ecmascript.js~string",
     "external"
   ],
   [
-    "builtinexternal/ecmascriptexternal.js~undefined",
+    "es2016/.external-ecmascript.js~undefined",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "BuiltinExternal/ECMAScriptExternal.js~undefined",
+    "es2016/.external-ecmascript.js~undefined",
     "external"
   ],
   [
-    "builtinexternal/webapiexternal.js~audiocontext",
-    "https://developer.mozilla.org/en/docs/Web/API/AudioContext",
-    "BuiltinExternal/WebAPIExternal.js~AudioContext",
-    "external"
-  ],
-  [
-    "builtinexternal/webapiexternal.js~canvasrenderingcontext2d",
-    "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
-    "BuiltinExternal/WebAPIExternal.js~CanvasRenderingContext2D",
-    "external"
-  ],
-  [
-    "builtinexternal/webapiexternal.js~documentfragment",
-    "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment",
-    "BuiltinExternal/WebAPIExternal.js~DocumentFragment",
-    "external"
-  ],
-  [
-    "builtinexternal/webapiexternal.js~element",
-    "https://developer.mozilla.org/en-US/docs/Web/API/Element",
-    "BuiltinExternal/WebAPIExternal.js~Element",
-    "external"
-  ],
-  [
-    "builtinexternal/webapiexternal.js~event",
-    "https://developer.mozilla.org/en-US/docs/Web/API/Event",
-    "BuiltinExternal/WebAPIExternal.js~Event",
-    "external"
-  ],
-  [
-    "builtinexternal/webapiexternal.js~node",
-    "https://developer.mozilla.org/en-US/docs/Web/API/Node",
-    "BuiltinExternal/WebAPIExternal.js~Node",
-    "external"
-  ],
-  [
-    "builtinexternal/webapiexternal.js~nodelist",
-    "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
-    "BuiltinExternal/WebAPIExternal.js~NodeList",
-    "external"
-  ],
-  [
-    "builtinexternal/webapiexternal.js~xmlhttprequest",
-    "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
-    "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
-    "external"
-  ],
-  [
-    "src/store.js",
-    "file/src/Store.js.html",
-    "src/Store.js",
+    "es2016/store.js",
+    "file/es2016/Store.js.html",
+    "es2016/Store.js",
     "file"
   ],
   [
-    "src/store.js~store#constructor",
-    "class/src/Store.js~Store.html#instance-constructor-constructor",
-    "src/Store.js~Store#constructor",
-    "method"
-  ],
-  [
-    "src/store.js~store#getchangelog",
-    "class/src/Store.js~Store.html#instance-method-getChangeLog",
-    "src/Store.js~Store#getChangeLog",
-    "method"
-  ],
-  [
-    "src/store.js~store#getfullhistory",
-    "class/src/Store.js~Store.html#instance-method-getFullHistory",
-    "src/Store.js~Store#getFullHistory",
-    "method"
-  ],
-  [
-    "src/store.js~store#getpreviousstate",
-    "class/src/Store.js~Store.html#instance-method-getPreviousState",
-    "src/Store.js~Store#getPreviousState",
-    "method"
-  ],
-  [
-    "src/store.js~store#setstate",
-    "class/src/Store.js~Store.html#instance-method-setState",
-    "src/Store.js~Store#setState",
-    "method"
-  ],
-  [
-    "src/store.js~store#state",
-    "class/src/Store.js~Store.html#instance-member-state",
-    "src/Store.js~Store#state",
+    "es2016/store.js~store#_boundstates",
+    "class/es2016/Store.js~Store.html#instance-member-_boundStates",
+    "es2016/Store.js~Store#_boundStates",
     "member"
   ],
   [
-    "src/store.js~store#subscribetochanges",
-    "class/src/Store.js~Store.html#instance-method-subscribeToChanges",
-    "src/Store.js~Store#subscribeToChanges",
+    "es2016/store.js~store#_triggerchangecallbacks",
+    "class/es2016/Store.js~Store.html#instance-method-_triggerChangeCallbacks",
+    "es2016/Store.js~Store#_triggerChangeCallbacks",
     "method"
   ],
   [
-    "src/store.js~store#unsubscribetochanges",
-    "class/src/Store.js~Store.html#instance-method-unSubscribeToChanges",
-    "src/Store.js~Store#unSubscribeToChanges",
+    "es2016/store.js~store#bindstate",
+    "class/es2016/Store.js~Store.html#instance-method-bindState",
+    "es2016/Store.js~Store#bindState",
     "method"
   ],
   [
-    "src/store.js~store.getchangelist",
-    "class/src/Store.js~Store.html#static-method-getChangeList",
-    "src/Store.js~Store.getChangeList",
+    "es2016/store.js~store#constructor",
+    "class/es2016/Store.js~Store.html#instance-constructor-constructor",
+    "es2016/Store.js~Store#constructor",
     "method"
   ],
   [
-    "src/store.js~store.getchangelog",
-    "class/src/Store.js~Store.html#static-method-getChangeLog",
-    "src/Store.js~Store.getChangeLog",
+    "es2016/store.js~store#forwardstate",
+    "class/es2016/Store.js~Store.html#instance-method-forwardState",
+    "es2016/Store.js~Store#forwardState",
     "method"
   ],
   [
-    "src/index.js",
-    "file/src/index.js.html",
-    "src/index.js",
+    "es2016/store.js~store#forwardtoboundstates",
+    "class/es2016/Store.js~Store.html#instance-method-forwardToBoundStates",
+    "es2016/Store.js~Store#forwardToBoundStates",
+    "method"
+  ],
+  [
+    "es2016/store.js~store#getchangelog",
+    "class/es2016/Store.js~Store.html#instance-method-getChangeLog",
+    "es2016/Store.js~Store#getChangeLog",
+    "method"
+  ],
+  [
+    "es2016/store.js~store#getfullhistory",
+    "class/es2016/Store.js~Store.html#instance-method-getFullHistory",
+    "es2016/Store.js~Store#getFullHistory",
+    "method"
+  ],
+  [
+    "es2016/store.js~store#getpreviousstate",
+    "class/es2016/Store.js~Store.html#instance-method-getPreviousState",
+    "es2016/Store.js~Store#getPreviousState",
+    "method"
+  ],
+  [
+    "es2016/store.js~store#maxhistorylength",
+    "class/es2016/Store.js~Store.html#instance-member-maxHistoryLength",
+    "es2016/Store.js~Store#maxHistoryLength",
+    "member"
+  ],
+  [
+    "es2016/store.js~store#onchangecallbacks",
+    "class/es2016/Store.js~Store.html#instance-member-onChangeCallbacks",
+    "es2016/Store.js~Store#onChangeCallbacks",
+    "member"
+  ],
+  [
+    "es2016/store.js~store#setstate",
+    "class/es2016/Store.js~Store.html#instance-method-setState",
+    "es2016/Store.js~Store#setState",
+    "method"
+  ],
+  [
+    "es2016/store.js~store#state",
+    "class/es2016/Store.js~Store.html#instance-member-state",
+    "es2016/Store.js~Store#state",
+    "member"
+  ],
+  [
+    "es2016/store.js~store#statehistory",
+    "class/es2016/Store.js~Store.html#instance-member-stateHistory",
+    "es2016/Store.js~Store#stateHistory",
+    "member"
+  ],
+  [
+    "es2016/store.js~store#subscribetochanges",
+    "class/es2016/Store.js~Store.html#instance-method-subscribeToChanges",
+    "es2016/Store.js~Store#subscribeToChanges",
+    "method"
+  ],
+  [
+    "es2016/store.js~store#trimhistory",
+    "class/es2016/Store.js~Store.html#instance-method-trimHistory",
+    "es2016/Store.js~Store#trimHistory",
+    "method"
+  ],
+  [
+    "es2016/store.js~store#unsubscribetochanges",
+    "class/es2016/Store.js~Store.html#instance-method-unSubscribeToChanges",
+    "es2016/Store.js~Store#unSubscribeToChanges",
+    "method"
+  ],
+  [
+    "es2016/store.js~store#unbindstate",
+    "class/es2016/Store.js~Store.html#instance-method-unbindState",
+    "es2016/Store.js~Store#unbindState",
+    "method"
+  ],
+  [
+    "es2016/store.js~store.getchangelist",
+    "class/es2016/Store.js~Store.html#static-method-getChangeList",
+    "es2016/Store.js~Store.getChangeList",
+    "method"
+  ],
+  [
+    "es2016/store.js~store.getchangelog",
+    "class/es2016/Store.js~Store.html#static-method-getChangeLog",
+    "es2016/Store.js~Store.getChangeLog",
+    "method"
+  ],
+  [
+    "es2016/index.js",
+    "file/es2016/index.js.html",
+    "es2016/index.js",
     "file"
   ]
 ]

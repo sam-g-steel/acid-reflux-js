@@ -1,0 +1,1161 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "es2016/.external-ecmascript.js",
+    "static": true,
+    "longname": "es2016/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "es2016/index.js",
+    "content": "/**\r\n * Created by sam_g on 2/7/2017.\r\n */\r\nimport { Store } from './Store';\r\nexport { Store } from './Store';\r\nexport default Store;\r\n//# sourceMappingURL=index.js.map",
+    "static": true,
+    "longname": "C:/Users/sam_g/repos/acid-reflux-js/es2016/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
+    "name": "es2016/Store.js",
+    "content": "/**\r\n * Created by sam_g on 2/7/2017.\r\n */\r\nimport _ from 'lodash';\r\nimport areEqual from 'fbjs/lib/areEqual';\r\n/** Simple data store with history recording and on change callbacks */\r\nexport class Store {\r\n    constructor(state) {\r\n        this._boundStates = [];\r\n        this.maxHistoryLength = 32;\r\n        /** @private {function[]} */\r\n        this.onChangeCallbacks = {\r\n            __anyChange: []\r\n        };\r\n        /** @property {object} [state={}] state - An object that represents the present state */\r\n        this.state = state || {};\r\n        /** @private */\r\n        this.state.__time = Date.now();\r\n        /** @private An array of states from the first to the last, excluding the present state */\r\n        this.stateHistory = [];\r\n    }\r\n    /**\r\n     * Get an array of states from the first to the last\r\n     * @return {object[]} An array of states\r\n     */\r\n    getFullHistory() {\r\n        return _.concat(this.stateHistory, [this.state]);\r\n    }\r\n    trimHistory(length = 32) {\r\n        this.stateHistory = this.stateHistory.slice(-length);\r\n    }\r\n    bindState(stateParent, mapping, forward = true) {\r\n        this._boundStates.push({ boundState: stateParent, mapper: mapping });\r\n        if (forward)\r\n            this.forwardState(stateParent);\r\n    }\r\n    unbindState(stateParent) {\r\n        let index = -1;\r\n        let boundStates = this._boundStates;\r\n        for (let i = 0; i < boundStates.length; i++) {\r\n            if (boundStates[i].boundState === stateParent)\r\n                index = i;\r\n        }\r\n        if (index > -1) {\r\n            boundStates.splice(index, 1);\r\n        }\r\n    }\r\n    forwardState(receivingStateParent, mapping) {\r\n        // the new state that will be transferred to the receiving state\r\n        let newState = {};\r\n        let receivingKeys = Object.keys(receivingStateParent.state);\r\n        // Loop through all of the values in this store's state\r\n        Object.keys(this.state).forEach((key) => {\r\n            // Map the sender's key to the receiver\r\n            let mappedKey = mapping ? mapping(key) : key;\r\n            // If the mappedKey can be found in the receiver add the value to the new state\r\n            if (receivingKeys.indexOf(mappedKey) != -1)\r\n                newState[mappedKey] = this.state[key];\r\n        });\r\n        // Send the new state to the receiving store\r\n        receivingStateParent.setState(newState);\r\n    }\r\n    forwardToBoundStates() {\r\n        this._boundStates.forEach(info => this.forwardState(info.boundState, info.mapper));\r\n    }\r\n    /**\r\n     * Get the previous state of the store\r\n     * @return {object} previous state\r\n     */\r\n    getPreviousState() {\r\n        let index = this.stateHistory.length - 1;\r\n        return this.stateHistory[index];\r\n    }\r\n    /**\r\n     * Set the store's state and optionally save the last state to history\r\n     * @param {object} newState\r\n     * @param {boolean} historyMode\r\n     * @example <caption>Set state and record previous state to history</caption>\r\n     * myStore.setState({userName: \"John Doe\"});\r\n     * @example <caption>Set state and forget about recording previous state to history</caption>\r\n     * myStore.setState({userName: \"Billy Bob\", false});\r\n     */\r\n    setState(newState, historyMode = true) {\r\n        // Save the old state\r\n        let oldState = this.state;\r\n        // Update the state\r\n        this.state = _.assign({}, oldState, newState);\r\n        let changes = Store.getChangeList(oldState, this.state);\r\n        this.trimHistory(this.maxHistoryLength);\r\n        // Loop through list of changes and trigger their respective callbacks\r\n        changes.forEach((o) => {\r\n            // Get the name of the changed property\r\n            let { property } = o;\r\n            // Get the new and old values of the property\r\n            let newProperty = this.state[property];\r\n            let oldProperty = oldState[property];\r\n            // Trigger the property's callback\r\n            this._triggerChangeCallbacks(property, newProperty, oldProperty);\r\n        });\r\n        if (changes.length) {\r\n            //\r\n            this.state.__time = Date.now();\r\n            if (historyMode == true) {\r\n                this.stateHistory.push(oldState);\r\n            }\r\n            this._triggerChangeCallbacks(\"__anyChange\", this.state, oldState);\r\n            this.forwardToBoundStates();\r\n        }\r\n    }\r\n    /**\r\n     * Subscribe to changes in the state\r\n     * @param {function(newValue: *, oldValue: *)} callback\r\n     * @param {string} property - Name of the property to watch\r\n     * @example <caption>Trigger callback when userName is updated</caption>\r\n     * myStore.subscribeToChanges((newVal)=>{ console.log(\"userName changed to...\", newVal)}, \"userName\");\r\n     */\r\n    subscribeToChanges(callback, property = \"__anyChange\") {\r\n        if (this.onChangeCallbacks[property] == undefined)\r\n            this.onChangeCallbacks[property] = [];\r\n        if (typeof callback != \"function\") {\r\n            console.error(\"Callback given is not a function as expected\");\r\n        }\r\n        else {\r\n            this.onChangeCallbacks[property].push(callback);\r\n        }\r\n    }\r\n    /**\r\n     * Remove subscription to changes in the state\r\n     * @param {function} callback\r\n     * @param {string} property - Name of the property to unsubscribe from\r\n     */\r\n    unSubscribeToChanges(callback, property = \"__anyChange\") {\r\n        let callbackList = this.onChangeCallbacks[property];\r\n        if (callbackList == undefined)\r\n            return;\r\n        this.onChangeCallbacks[property] = _.pull(callbackList, callback);\r\n    }\r\n    /**\r\n     *\r\n     * @param {object} oldState\r\n     * @param {object} newState\r\n     * @return {Array}\r\n     */\r\n    static getChangeList(oldState, newState) {\r\n        // Loop through state properties looking for changes\r\n        let changes = [];\r\n        for (let property in newState) {\r\n            let newProperty = newState[property];\r\n            let oldProperty = oldState[property];\r\n            if (property == \"__time\")\r\n                continue;\r\n            // Generate change list\r\n            if (!areEqual(newProperty, oldProperty)) {\r\n                changes.push({\r\n                    property: property,\r\n                    isNew: oldProperty == undefined || oldProperty == null\r\n                });\r\n            }\r\n        }\r\n        return changes;\r\n    }\r\n    /**\r\n     *\r\n     * @param {object} oldState\r\n     * @param {object} newState\r\n     * @return {string}\r\n     */\r\n    static getChangeLog(oldState, newState) {\r\n        let changes = this.getChangeList(oldState, newState);\r\n        let log = changes.map((o) => {\r\n            if (o.isNew)\r\n                return `Added new property \"${o.property}\"`;\r\n            else\r\n                return `Changed value of \"${o.property}\"`;\r\n        });\r\n        return log.join(\"\\n\");\r\n    }\r\n    _triggerChangeCallbacks(property, newValue, oldValue) {\r\n        if (!this.onChangeCallbacks[property])\r\n            return;\r\n        this.onChangeCallbacks[property].forEach((callback) => callback(newValue, oldValue, property));\r\n    }\r\n    getChangeLog() {\r\n        let fullHistory = this.getFullHistory();\r\n        let changes = [];\r\n        fullHistory.forEach((o, i) => {\r\n            if (i == 0)\r\n                return;\r\n            changes.push(Store.getChangeLog(fullHistory[i - 1], o));\r\n        });\r\n        return changes.join(\"\\n------------\\n\");\r\n    }\r\n}\r\nexport default Store;\r\n//# sourceMappingURL=Store.js.map",
+    "static": true,
+    "longname": "C:/Users/sam_g/repos/acid-reflux-js/es2016/Store.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 50,
+    "kind": "class",
+    "name": "Store",
+    "memberof": "es2016/Store.js",
+    "static": true,
+    "longname": "es2016/Store.js~Store",
+    "access": "public",
+    "export": true,
+    "importPath": "acid-reflux-js/es2016/Store.js",
+    "importStyle": "{Store}",
+    "description": "Simple data store with history recording and on change callbacks",
+    "lineNumber": 7,
+    "interface": false
+  },
+  {
+    "__docId__": 51,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "_boundStates",
+    "memberof": "es2016/Store.js~Store",
+    "static": false,
+    "longname": "es2016/Store.js~Store#_boundStates",
+    "access": "private",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "maxHistoryLength",
+    "memberof": "es2016/Store.js~Store",
+    "static": false,
+    "longname": "es2016/Store.js~Store#maxHistoryLength",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "onChangeCallbacks",
+    "memberof": "es2016/Store.js~Store",
+    "static": false,
+    "longname": "es2016/Store.js~Store#onChangeCallbacks",
+    "access": "private",
+    "description": null,
+    "lineNumber": 12,
+    "type": {
+      "types": [
+        "{\"__anyChange\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "state",
+    "memberof": "es2016/Store.js~Store",
+    "static": false,
+    "longname": "es2016/Store.js~Store#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "{}",
+        "defaultRaw": {},
+        "name": "state",
+        "description": "state - An object that represents the present state"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "stateHistory",
+    "memberof": "es2016/Store.js~Store",
+    "static": false,
+    "longname": "es2016/Store.js~Store#stateHistory",
+    "access": "private",
+    "description": null,
+    "lineNumber": 20,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "getFullHistory",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#getFullHistory",
+    "access": "public",
+    "description": "Get an array of states from the first to the last",
+    "lineNumber": 26,
+    "return": {
+      "nullable": null,
+      "types": [
+        "object[]"
+      ],
+      "spread": false,
+      "description": "An array of states"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "trimHistory",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#trimHistory",
+    "access": "public",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "params": [
+      {
+        "name": "length",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 32,
+        "defaultValue": "32"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "bindState",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#bindState",
+    "access": "public",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "params": [
+      {
+        "name": "stateParent",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "mapping",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "forward",
+        "optional": true,
+        "types": [
+          "boolean"
+        ],
+        "defaultRaw": true,
+        "defaultValue": "true"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "unbindState",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#unbindState",
+    "access": "public",
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "params": [
+      {
+        "name": "stateParent",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "forwardState",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#forwardState",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "params": [
+      {
+        "name": "receivingStateParent",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "mapping",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "forwardToBoundStates",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#forwardToBoundStates",
+    "access": "public",
+    "description": null,
+    "lineNumber": 63,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "getPreviousState",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#getPreviousState",
+    "access": "public",
+    "description": "Get the previous state of the store",
+    "lineNumber": 70,
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "previous state"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "setState",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#setState",
+    "access": "public",
+    "description": "Set the store's state and optionally save the last state to history",
+    "examples": [
+      "<caption>Set state and record previous state to history</caption>\nmyStore.setState({userName: \"John Doe\"});",
+      "<caption>Set state and forget about recording previous state to history</caption>\nmyStore.setState({userName: \"Billy Bob\", false});"
+    ],
+    "lineNumber": 83,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "newState",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "historyMode",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "subscribeToChanges",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#subscribeToChanges",
+    "access": "public",
+    "description": "Subscribe to changes in the state",
+    "examples": [
+      "<caption>Trigger callback when userName is updated</caption>\nmyStore.subscribeToChanges((newVal)=>{ console.log(\"userName changed to...\", newVal)}, \"userName\");"
+    ],
+    "lineNumber": 117,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function(newValue: *, oldValue: *)"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "property",
+        "description": "Name of the property to watch"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "unSubscribeToChanges",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#unSubscribeToChanges",
+    "access": "public",
+    "description": "Remove subscription to changes in the state",
+    "lineNumber": 132,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "property",
+        "description": "Name of the property to unsubscribe from"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "getChangeList",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "es2016/Store.js~Store.getChangeList",
+    "access": "public",
+    "description": "",
+    "lineNumber": 144,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "oldState",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "newState",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "getChangeLog",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "es2016/Store.js~Store.getChangeLog",
+    "access": "public",
+    "description": "",
+    "lineNumber": 168,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "oldState",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "newState",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "_triggerChangeCallbacks",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#_triggerChangeCallbacks",
+    "access": "private",
+    "description": null,
+    "lineNumber": 178,
+    "undocument": true,
+    "params": [
+      {
+        "name": "property",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "newValue",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "oldValue",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "getChangeLog",
+    "memberof": "es2016/Store.js~Store",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "es2016/Store.js~Store#getChangeLog",
+    "access": "public",
+    "description": null,
+    "lineNumber": 183,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# acid-reflux-js\r\nA simple library for uni-directional dataflow application architecture... inspired by Flux and Redux\r\n\r\n[![npm version](https://badge.fury.io/js/acid-reflux-js.svg)](https://badge.fury.io/js/acid-reflux-js)\r\n\r\nSee more in depth docs [here](https://sam-g-steel.github.io/acid-reflux-js/)\r\n\r\nExample code...\r\n\r\n    var acidRefluxJS = require(\"acid-reflux-js\")\r\n    \r\n    // Create store\r\n    let store = new acidRefluxJS.Store();\r\n    \r\n    // Subscribe to changes\r\n    store.subscribeToChanges((newState, oldState)=>{\r\n        console.log(\"on any change\", newState)\r\n    });\r\n    \r\n    store.subscribeToChanges((newVal, oldVal)=>{\r\n        console.log(\"isLoggedIn changed to...\", newVal)\r\n    }, \"isLoggedIn\");\r\n    \r\n    // Set time\r\n    store.setState({\r\n        time: Date.now()\r\n    });\r\n    \r\n    // Set time and isLoggedIn\r\n    store.setState({\r\n        time: Date.now(),\r\n        isLoggedIn: true\r\n    });\r\n    \r\n    console.log(\"Full History\", store.getFullHistory());\r\n    \r\n#Latest Changes\r\n\r\n\r\n\r\n**v0.3.0**\r\n\r\nAdded state mapping\r\nMore docs on this later\r\n\r\n\r\n**v0.2.0**\r\n\r\nAdded State.maxHistoryLength\r\nAdded state binding\r\n\r\n\r\n**v0.1.7**\r\n\r\nAdded more docs using ESdoc [wip]\r\n\r\n\r\n\r\n**v0.1.6**\r\n\r\nUpdated Change Log functions... internal property \"__time\" is now ignored\r\n\r\nLog looks cleaner\r\n\r\n\r\n**v0.1.5**\r\n\r\nAdded Change Log functions... More to come in the docs!\r\n\r\n\r\n**v0.1.4**\r\n\r\nImproved changed detection, now if a state property changes from one object to another that is identical, no change is registered\r\n\r\n#Future Plans\r\n\r\n- More Docs\r\n- State change playback mode",
+    "longname": "C:\\Users\\sam_g\\repos\\acid-reflux-js\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"acid-reflux-js\",\n  \"version\": \"0.3.0\",\n  \"description\": \"A simple library for uni-directional dataflow application architecture... inspired by Flux and Redux\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"build\": \"tsc -d && babel ./es2016 -d ./es5 -s\",\n    \"generate-docs\": \"esdoc -c esdoc.json\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/sam-g-steel/acid-reflux-js.git\"\n  },\n  \"keywords\": [\n    \"Store\"\n  ],\n  \"author\": \"Samuel Vincent Sylvester\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/sam-g-steel/acid-reflux-js/issues\"\n  },\n  \"homepage\": \"https://github.com/sam-g-steel/acid-reflux-js#readme\",\n  \"dependencies\": {\n    \"fbjs\": \"^0.8.9\",\n    \"lodash\": \"^4.17.4\"\n  },\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.22.2\",\n    \"babel-plugin-transform-flow-strip-types\": \"^6.22.0\",\n    \"babel-preset-es2015\": \"^6.22.0\",\n    \"babel-preset-stage-2\": \"^6.22.0\",\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"typescript\": \"^2.5.3\"\n  }\n}\n",
+    "longname": "C:\\Users\\sam_g\\repos\\acid-reflux-js\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

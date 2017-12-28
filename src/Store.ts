@@ -6,21 +6,20 @@ import areEqual from 'fbjs/lib/areEqual';
 
 /** Simple data store with history recording and on change callbacks */
 export class Store{
-    private _boundParents: any = [];
+    private _boundStates: {boundState:any, mapper: (string)=>string}[] = [];
     onChangeCallbacks: any;
     maxHistoryLength: number = 32;
     state: any;
     private stateHistory: any[];
 
-    constructor(){
+    constructor(state?:any){
         /** @private {function[]} */
         this.onChangeCallbacks = {
             __anyChange: []
         };
 
         /** @property {object} [state={}] state - An object that represents the present state */
-        this.state = {
-        };
+        this.state = state || {};
 
         /** @private */
         this.state.__time = Date.now();
@@ -37,33 +36,48 @@ export class Store{
         return _.concat(this.stateHistory, [this.state]);
     }
 
-    trimHistory(length = 32){
+    trimHistory(length:number = 32){
         this.stateHistory = this.stateHistory.slice(-length);
     }
 
-    bindState(stateParent){
-        this._boundParents.push(stateParent);
+    bindState(stateParent, mapping?: (string)=>string, forward:boolean = true){
+        this._boundStates.push({boundState: stateParent, mapper: mapping});
+        if(forward) this.forwardState(stateParent);
     }
 
     unbindState(stateParent){
-        var index = this._boundParents.indexOf(stateParent);
+        let index = -1;
+        let boundStates = this._boundStates;
+        for(let i=0; i<boundStates.length; i++){
+            if(boundStates[i].boundState === stateParent) index = i;
+        }
+
         if (index > -1) {
-            this._boundParents.splice(index, 1);
+            boundStates.splice(index, 1);
         }
     }
 
-    fowardState(stateParent){
-        let keys = _.intersection(Object.keys(stateParent.state), Object.keys(this.state));
-
+    forwardState(receivingStateParent, mapping?: (string)=>string){
+        // the new state that will be transferred to the receiving state
         let newState = {};
 
-        keys.forEach( key => newState[key] = this.state[key]);
+        let receivingKeys = Object.keys(receivingStateParent.state);
 
-        stateParent.setState(newState);
+        // Loop through all of the values in this store's state
+        Object.keys(this.state).forEach((key)=> {
+            // Map the sender's key to the receiver
+            let mappedKey = mapping ? mapping(key) : key;
+
+            // If the mappedKey can be found in the receiver add the value to the new state
+            if (receivingKeys.indexOf(mappedKey) != -1) newState[mappedKey] = this.state[key];
+        });
+
+        // Send the new state to the receiving store
+        receivingStateParent.setState(newState);
     }
 
-    private fowardToBoundStates(){
-        this._boundParents.forEach(parent => this.fowardState(parent));
+    private forwardToBoundStates(){
+        this._boundStates.forEach(info => this.forwardState(info.boundState, info.mapper));
     }
 
     /**
@@ -119,7 +133,7 @@ export class Store{
             }
 
             this._triggerChangeCallbacks("__anyChange", this.state, oldState);
-            this.fowardToBoundStates();
+            this.forwardToBoundStates();
         }
     }
 

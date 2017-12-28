@@ -38,6 +38,12 @@ Example code...
 
 
 
+**v0.3.0**
+
+Added state mapping
+More docs on this later
+
+
 **v0.2.0**
 
 Added State.maxHistoryLength

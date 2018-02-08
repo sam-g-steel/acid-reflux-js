@@ -5,7 +5,7 @@ export declare class Store {
     maxHistoryLength: number;
     state: any;
     private stateHistory;
-    constructor();
+    constructor(state?: any);
     /**
      * Get an array of states from the first to the last
      * @return {object[]} An array of states

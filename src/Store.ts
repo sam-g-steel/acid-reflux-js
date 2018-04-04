@@ -6,12 +6,22 @@ import areEqual from 'fbjs/lib/areEqual';
 
 /** Simple data store with history recording and on change callbacks */
 export class Store{
+    /***
+     *
+     * @ignore
+     * @type {any[]}
+     * @private
+     */
     private _boundStates: {boundState:any, mapper: (string)=>string}[] = [];
     onChangeCallbacks: any;
     maxHistoryLength: number = 32;
     state: any;
     private stateHistory: any[];
 
+    /***
+     * Creates a store and sets its initial state to the optional value passed in
+     * @param state
+     */
     constructor(state?:any){
         /** @private {function[]} */
         this.onChangeCallbacks = {
@@ -36,15 +46,38 @@ export class Store{
         return _.concat(this.stateHistory, [this.state]);
     }
 
+    /**
+     * Trims the history down to the last 'x' number of entries
+     * @param {number} length - max number of state history entries
+     */
     trimHistory(length:number = 32){
         this.stateHistory = this.stateHistory.slice(-length);
     }
 
+    /***
+     * Automaticly updates the state of stateParent
+     * @example <caption>Binding to a React component</caption>
+     * componentDidMount(){
+     *     // Don't forget to unbind on unmount
+     *     mainStore.bindState(this);
+     * }
+     * @param stateParent
+     * @param {function} mapping - (string)=>string
+     * @param {boolean} forward
+     */
     bindState(stateParent, mapping?: (string)=>string, forward:boolean = true){
         this._boundStates.push({boundState: stateParent, mapper: mapping});
         if(forward) this.forwardState(stateParent);
     }
 
+    /***
+     * Unbinds the state of stateParent
+     * @example <caption>Unbinding to a React component</caption>
+     * componentWillUnmount(){
+     *     mainStore.unbindState(this);
+     * }
+     * @param stateParent
+     */
     unbindState(stateParent){
         let index = -1;
         let boundStates = this._boundStates;
@@ -89,7 +122,6 @@ export class Store{
 
         return this.stateHistory[index];
     }
-
 
     /**
      * Set the store's state and optionally save the last state to history
@@ -194,12 +226,12 @@ export class Store{
     }
 
     /**
-     *
+     * Returns difference between two states in human readable form
      * @param {object} oldState
      * @param {object} newState
      * @return {string}
      */
-    static getChangeLog(oldState, newState){
+    static getChangeLog(oldState, newState) : string{
         let changes = this.getChangeList(oldState, newState);
         let log = changes.map((o)=>{
             if(o.isNew) return`Added new property "${o.property}"`;
@@ -210,13 +242,26 @@ export class Store{
         return log.join("\n");
     }
 
+    // TODO: Should this be private
+    /***
+     *
+     * @ignore
+     * @param property
+     * @param newValue
+     * @param oldValue
+     * @private
+     */
     _triggerChangeCallbacks(property, newValue, oldValue){
         if(!this.onChangeCallbacks[property]) return;
 
         this.onChangeCallbacks[property].forEach((callback)=>callback(newValue, oldValue, property));
     }
 
-    getChangeLog(){
+    /**
+     * Returns change log of entire history in human readable form
+     * @return {string}
+     */
+    getChangeLog() : string{
         let fullHistory = this.getFullHistory();
         let changes = [];
 

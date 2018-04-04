@@ -1,18 +1,51 @@
 /** Simple data store with history recording and on change callbacks */
 export declare class Store {
+    /***
+     *
+     * @ignore
+     * @type {any[]}
+     * @private
+     */
     private _boundStates;
     onChangeCallbacks: any;
     maxHistoryLength: number;
     state: any;
     private stateHistory;
+    /***
+     * Creates a store and sets its initial state to the optional value passed in
+     * @param state
+     */
     constructor(state?: any);
     /**
      * Get an array of states from the first to the last
      * @return {object[]} An array of states
      */
     getFullHistory(): any;
+    /**
+     * Trims the history down to the last 'x' number of entries
+     * @param {number} length - max number of state history entries
+     */
     trimHistory(length?: number): void;
+    /***
+     * Automaticly updates the state of stateParent
+     * @example <caption>Binding to a React component</caption>
+     * componentDidMount(){
+     *     // Don't forget to unbind on unmount
+     *     mainStore.bindState(this);
+     * }
+     * @param stateParent
+     * @param {function} mapping - (string)=>string
+     * @param {boolean} forward
+     */
     bindState(stateParent: any, mapping?: (string) => string, forward?: boolean): void;
+    /***
+     * Unbinds the state of stateParent
+     * @example <caption>Unbinding to a React component</caption>
+     * componentWillUnmount(){
+     *     mainStore.unbindState(this);
+     * }
+     * @param stateParent
+     */
     unbindState(stateParent: any): void;
     forwardState(receivingStateParent: any, mapping?: (string) => string): void;
     private forwardToBoundStates();
@@ -53,13 +86,25 @@ export declare class Store {
      */
     static getChangeList(oldState: any, newState: any): any[];
     /**
-     *
+     * Returns difference between two states in human readable form
      * @param {object} oldState
      * @param {object} newState
      * @return {string}
      */
     static getChangeLog(oldState: any, newState: any): string;
+    /***
+     *
+     * @ignore
+     * @param property
+     * @param newValue
+     * @param oldValue
+     * @private
+     */
     _triggerChangeCallbacks(property: any, newValue: any, oldValue: any): void;
+    /**
+     * Returns change log of entire history in human readable form
+     * @return {string}
+     */
     getChangeLog(): string;
 }
 export default Store;

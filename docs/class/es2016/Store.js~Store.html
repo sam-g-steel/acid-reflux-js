@@ -127,7 +127,8 @@
       <div>
         
         
-        
+        <div data-ice="description"><p>Returns difference between two states in human readable form</p>
+</div>
       </div>
     </td>
     <td>
@@ -156,13 +157,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/es2016/Store.js~Store.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">()</span>
+          <span class="code" data-ice="name"><span><a href="class/es2016/Store.js~Store.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">(state: <span>*</span>)</span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Creates a store and sets its initial state to the optional value passed in</p>
+</div>
       </div>
     </td>
     <td>
@@ -253,34 +255,6 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/es2016/Store.js~Store.html#instance-member-_boundStates">_boundStates</a></span></span><span class="code" data-ice="signature">: <span><span>*</span><span>[]</span></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">private</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
           <span class="code" data-ice="name"><span><a href="class/es2016/Store.js~Store.html#instance-member-onChangeCallbacks">onChangeCallbacks</a></span></span><span class="code" data-ice="signature">: {&quot;__anyChange&quot;: <span>*</span>}</span>
         </p>
       </div>
@@ -344,13 +318,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/es2016/Store.js~Store.html#instance-method-bindState">bindState</a></span></span><span class="code" data-ice="signature">(stateParent: <span>*</span>, mapping: <span>*</span>, forward: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/es2016/Store.js~Store.html#instance-method-bindState">bindState</a></span></span><span class="code" data-ice="signature">(stateParent: <span>*</span>, mapping: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, forward: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>)</span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Automaticly updates the state of stateParent</p>
+</div>
       </div>
     </td>
     <td>
@@ -428,13 +403,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/es2016/Store.js~Store.html#instance-method-getChangeLog">getChangeLog</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/es2016/Store.js~Store.html#instance-method-getChangeLog">getChangeLog</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
         </p>
       </div>
       <div>
         
         
-        
+        <div data-ice="description"><p>Returns change log of entire history in human readable form</p>
+</div>
       </div>
     </td>
     <td>
@@ -578,7 +554,8 @@
       <div>
         
         
-        
+        <div data-ice="description"><p>Trims the history down to the last &apos;x&apos; number of entries</p>
+</div>
       </div>
     </td>
     <td>
@@ -635,41 +612,8 @@
       <div>
         
         
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-</tbody>
-</table>
-<table class="summary" data-ice="summary">
-  <thead><tr><td data-ice="title" colspan="3">Private Methods</td></tr></thead>
-  <tbody>
-  
-  <tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">private</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/es2016/Store.js~Store.html#instance-method-_triggerChangeCallbacks">_triggerChangeCallbacks</a></span></span><span class="code" data-ice="signature">(property: <span>*</span>, newValue: <span>*</span>, oldValue: <span>*</span>)</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
+        <div data-ice="description"><p>Unbinds the state of stateParent</p>
+</div>
       </div>
     </td>
     <td>
@@ -698,7 +642,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber144">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber177">source</a></span></span>
     </span>
   </h3>
 
@@ -775,14 +719,15 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber168">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber201">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Returns difference between two states in human readable form</p>
+</div>
 
   
 
@@ -851,22 +796,39 @@
     
     
     
-    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">()</span>
+    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">(state: <span>*</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber8">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber12">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Creates a store and sets its initial state to the optional value passed in</p>
+</div>
 
   
 
-  <div data-ice="properties">
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">state</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
 </div>
 
   
@@ -901,7 +863,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber10">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber20">source</a></span></span>
     </span>
   </h3>
 
@@ -944,7 +906,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber16">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber26">source</a></span></span>
     </span>
   </h3>
 
@@ -996,49 +958,6 @@
 <h2 data-ice="title">Private Members</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-_boundStates">
-    <span class="access" data-ice="access">private</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">_boundStates</span><span class="code" data-ice="signature">: <span><span>*</span><span>[]</span></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber9">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-member-onChangeCallbacks">
     <span class="access" data-ice="access">private</span>
     
@@ -1050,7 +969,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber12">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber22">source</a></span></span>
     </span>
   </h3>
 
@@ -1093,7 +1012,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber20">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber30">source</a></span></span>
     </span>
   </h3>
 
@@ -1135,18 +1054,19 @@
     
     
     
-    <span class="code" data-ice="name">bindState</span><span class="code" data-ice="signature">(stateParent: <span>*</span>, mapping: <span>*</span>, forward: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>)</span>
+    <span class="code" data-ice="name">bindState</span><span class="code" data-ice="signature">(stateParent: <span>*</span>, mapping: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, forward: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber32">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber57">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Automaticly updates the state of stateParent</p>
+</div>
 
   
 
@@ -1166,15 +1086,15 @@
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">mapping</td>
-      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>(string)=&gt;string</p>
+</td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">forward</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li>
-<li>default: true</li></ul></td>
+      <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 </tbody>
@@ -1192,7 +1112,17 @@
 
   
 
-  
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      <div class="example-caption" data-ice="exampleCaption">Binding to a React component</div>
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">componentDidMount(){
+    // Don&apos;t forget to unbind on unmount
+    mainStore.bindState(this);
+}</code></pre>
+    </div>
+</div>
 
   
 
@@ -1211,7 +1141,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber48">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber81">source</a></span></span>
     </span>
   </h3>
 
@@ -1276,7 +1206,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber63">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber96">source</a></span></span>
     </span>
   </h3>
 
@@ -1315,18 +1245,19 @@
     
     
     
-    <span class="code" data-ice="name">getChangeLog</span><span class="code" data-ice="signature">(): <span>*</span></span>
+    <span class="code" data-ice="name">getChangeLog</span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber183">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber229">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Returns change log of entire history in human readable form</p>
+</div>
 
   
 
@@ -1338,7 +1269,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
           
         </tr>
       </tbody>
@@ -1374,7 +1305,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber26">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber36">source</a></span></span>
     </span>
   </h3>
 
@@ -1431,7 +1362,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber70">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber103">source</a></span></span>
     </span>
   </h3>
 
@@ -1488,7 +1419,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber83">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber116">source</a></span></span>
     </span>
   </h3>
 
@@ -1565,7 +1496,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber117">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber150">source</a></span></span>
     </span>
   </h3>
 
@@ -1639,14 +1570,15 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber29">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber43">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Trims the history down to the last &apos;x&apos; number of entries</p>
+</div>
 
   
 
@@ -1661,9 +1593,9 @@
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">length</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li>
-<li>default: 32</li></ul></td>
-      <td data-ice="description"></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>max number of state history entries</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -1699,7 +1631,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber132">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber165">source</a></span></span>
     </span>
   </h3>
 
@@ -1766,14 +1698,15 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber37">source</a></span></span>
+      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber70">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  
+  <div data-ice="description"><p>Unbinds the state of stateParent</p>
+</div>
 
   
 
@@ -1806,80 +1739,16 @@
 
   
 
-  
-
-  
-
-  
-  
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      <div class="example-caption" data-ice="exampleCaption">Unbinding to a React component</div>
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">componentWillUnmount(){
+    mainStore.unbindState(this);
+}</code></pre>
+    </div>
 </div>
-<h2 data-ice="title">Private Methods</h2>
-
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-_triggerChangeCallbacks">
-    <span class="access" data-ice="access">private</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">_triggerChangeCallbacks</span><span class="code" data-ice="signature">(property: <span>*</span>, newValue: <span>*</span>, oldValue: <span>*</span>)</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/es2016/Store.js.html#lineNumber178">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">property</td>
-      <td data-ice="type" class="code"><span>*</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">newValue</td>
-      <td data-ice="type" class="code"><span>*</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">oldValue</td>
-      <td data-ice="type" class="code"><span>*</span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
 

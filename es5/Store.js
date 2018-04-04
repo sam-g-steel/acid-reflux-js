@@ -24,9 +24,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 /** Simple data store with history recording and on change callbacks */
 var Store = exports.Store = function () {
+    /***
+     * Creates a store and sets its initial state to the optional value passed in
+     * @param state
+     */
     function Store(state) {
         _classCallCheck(this, Store);
 
+        /***
+         *
+         * @ignore
+         * @type {any[]}
+         * @private
+         */
         this._boundStates = [];
         this.maxHistoryLength = 32;
         /** @private {function[]} */
@@ -51,6 +61,11 @@ var Store = exports.Store = function () {
         value: function getFullHistory() {
             return _lodash2.default.concat(this.stateHistory, [this.state]);
         }
+        /**
+         * Trims the history down to the last 'x' number of entries
+         * @param {number} length - max number of state history entries
+         */
+
     }, {
         key: 'trimHistory',
         value: function trimHistory() {
@@ -58,6 +73,18 @@ var Store = exports.Store = function () {
 
             this.stateHistory = this.stateHistory.slice(-length);
         }
+        /***
+         * Automaticly updates the state of stateParent
+         * @example <caption>Binding to a React component</caption>
+         * componentDidMount(){
+         *     // Don't forget to unbind on unmount
+         *     mainStore.bindState(this);
+         * }
+         * @param stateParent
+         * @param {function} mapping - (string)=>string
+         * @param {boolean} forward
+         */
+
     }, {
         key: 'bindState',
         value: function bindState(stateParent, mapping) {
@@ -66,6 +93,15 @@ var Store = exports.Store = function () {
             this._boundStates.push({ boundState: stateParent, mapper: mapping });
             if (forward) this.forwardState(stateParent);
         }
+        /***
+         * Unbinds the state of stateParent
+         * @example <caption>Unbinding to a React component</caption>
+         * componentWillUnmount(){
+         *     mainStore.unbindState(this);
+         * }
+         * @param stateParent
+         */
+
     }, {
         key: 'unbindState',
         value: function unbindState(stateParent) {
@@ -204,12 +240,27 @@ var Store = exports.Store = function () {
 
     }, {
         key: '_triggerChangeCallbacks',
+
+        // TODO: Should this be private
+        /***
+         *
+         * @ignore
+         * @param property
+         * @param newValue
+         * @param oldValue
+         * @private
+         */
         value: function _triggerChangeCallbacks(property, newValue, oldValue) {
             if (!this.onChangeCallbacks[property]) return;
             this.onChangeCallbacks[property].forEach(function (callback) {
                 return callback(newValue, oldValue, property);
             });
         }
+        /**
+         * Returns change log of entire history in human readable form
+         * @return {string}
+         */
+
     }, {
         key: 'getChangeLog',
         value: function getChangeLog() {
@@ -241,7 +292,7 @@ var Store = exports.Store = function () {
             return changes;
         }
         /**
-         *
+         * Returns difference between two states in human readable form
          * @param {object} oldState
          * @param {object} newState
          * @return {string}

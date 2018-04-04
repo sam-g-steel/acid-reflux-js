@@ -294,18 +294,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "es2016/store.js~store#_boundstates",
-    "class/es2016/Store.js~Store.html#instance-member-_boundStates",
-    "es2016/Store.js~Store#_boundStates",
-    "member"
-  ],
-  [
-    "es2016/store.js~store#_triggerchangecallbacks",
-    "class/es2016/Store.js~Store.html#instance-method-_triggerChangeCallbacks",
-    "es2016/Store.js~Store#_triggerChangeCallbacks",
-    "method"
-  ],
-  [
     "es2016/store.js~store#bindstate",
     "class/es2016/Store.js~Store.html#instance-method-bindState",
     "es2016/Store.js~Store#bindState",

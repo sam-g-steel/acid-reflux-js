@@ -32,6 +32,7 @@
     "esdoc": "^1.0.4",
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
     "esdoc-standard-plugin": "^1.0.0",
+    "esdoc-typescript-plugin": "^1.0.0",
     "typescript": "^2.5.3"
   }
 }

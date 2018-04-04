@@ -5,7 +5,17 @@ import _ from 'lodash';
 import areEqual from 'fbjs/lib/areEqual';
 /** Simple data store with history recording and on change callbacks */
 export class Store {
+    /***
+     * Creates a store and sets its initial state to the optional value passed in
+     * @param state
+     */
     constructor(state) {
+        /***
+         *
+         * @ignore
+         * @type {any[]}
+         * @private
+         */
         this._boundStates = [];
         this.maxHistoryLength = 32;
         /** @private {function[]} */
@@ -26,14 +36,37 @@ export class Store {
     getFullHistory() {
         return _.concat(this.stateHistory, [this.state]);
     }
+    /**
+     * Trims the history down to the last 'x' number of entries
+     * @param {number} length - max number of state history entries
+     */
     trimHistory(length = 32) {
         this.stateHistory = this.stateHistory.slice(-length);
     }
+    /***
+     * Automaticly updates the state of stateParent
+     * @example <caption>Binding to a React component</caption>
+     * componentDidMount(){
+     *     // Don't forget to unbind on unmount
+     *     mainStore.bindState(this);
+     * }
+     * @param stateParent
+     * @param {function} mapping - (string)=>string
+     * @param {boolean} forward
+     */
     bindState(stateParent, mapping, forward = true) {
         this._boundStates.push({ boundState: stateParent, mapper: mapping });
         if (forward)
             this.forwardState(stateParent);
     }
+    /***
+     * Unbinds the state of stateParent
+     * @example <caption>Unbinding to a React component</caption>
+     * componentWillUnmount(){
+     *     mainStore.unbindState(this);
+     * }
+     * @param stateParent
+     */
     unbindState(stateParent) {
         let index = -1;
         let boundStates = this._boundStates;
@@ -160,7 +193,7 @@ export class Store {
         return changes;
     }
     /**
-     *
+     * Returns difference between two states in human readable form
      * @param {object} oldState
      * @param {object} newState
      * @return {string}
@@ -175,11 +208,24 @@ export class Store {
         });
         return log.join("\n");
     }
+    // TODO: Should this be private
+    /***
+     *
+     * @ignore
+     * @param property
+     * @param newValue
+     * @param oldValue
+     * @private
+     */
     _triggerChangeCallbacks(property, newValue, oldValue) {
         if (!this.onChangeCallbacks[property])
             return;
         this.onChangeCallbacks[property].forEach((callback) => callback(newValue, oldValue, property));
     }
+    /**
+     * Returns change log of entire history in human readable form
+     * @return {string}
+     */
     getChangeLog() {
         let fullHistory = this.getFullHistory();
         let changes = [];

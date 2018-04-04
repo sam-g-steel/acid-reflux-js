@@ -38,8 +38,12 @@ Example code...
 
 
 
-**v0.3.1**
+**v0.3.2**
 Updating docs
+
+
+**v0.3.1**
+Fixed a bug in the TypeScript definition file
 
 
 **v0.3.0**

@@ -40,3 +40,4 @@ jspm_packages
 /docs/ast/
 /docs/dump.json
 /docs/package.json
+/lib

@@ -38,6 +38,11 @@ Example code...
 
 
 
+**v1.0.0**
+Changed build dir from /es5 to /lib
+Added improved TypeScript support
+
+
 **v0.3.2**
 Updating docs
 

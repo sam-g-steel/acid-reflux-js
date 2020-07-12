@@ -5,7 +5,7 @@ import _ from 'lodash';
 import areEqual from 'fbjs/lib/areEqual';
 
 /** Simple data store with history recording and on change callbacks */
-export class Store{
+export class Store<stateInterface>{
     /***
      *
      * @ignore
@@ -15,23 +15,23 @@ export class Store{
     private _boundStates: {boundState:any, mapper: (string)=>string}[] = [];
     onChangeCallbacks: any;
     maxHistoryLength: number = 32;
-    state: any;
-    private stateHistory: any[];
+    state: stateInterface;
+    private stateHistory: stateInterface[];
 
     /***
      * Creates a store and sets its initial state to the optional value passed in
      * @param state
      */
-    constructor(state?:any){
+    constructor(state?:stateInterface){
         /** @private {function[]} */
         this.onChangeCallbacks = {
             __anyChange: []
         };
 
         /** @property {object} [state={}] state - An object that represents the present state */
-        this.state = state || {};
+        this.state = state || {} as stateInterface;
 
-        /** @private */
+        /** @private */ // @ts-ignore
         this.state.__time = Date.now();
 
         /** @private An array of states from the first to the last, excluding the present state */
@@ -132,7 +132,7 @@ export class Store{
      * @example <caption>Set state and forget about recording previous state to history</caption>
      * myStore.setState({userName: "Billy Bob", false});
      */
-    setState(newState, historyMode = true){
+    setState(newState: stateInterface, historyMode = true){
 
         // Save the old state
         let oldState = this.state;
@@ -157,7 +157,7 @@ export class Store{
         });
 
         if(changes.length){
-            //
+            // @ts-ignore
             this.state.__time = Date.now();
 
             if(historyMode == true){

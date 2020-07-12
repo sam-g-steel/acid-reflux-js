@@ -1,1 +1,0 @@
-{"version":3,"sources":["../es2016/index.js"],"names":["Store"],"mappings":";;;;;;;AAGA;;;;;kBACSA,K;;;;AAET","file":"index.js","sourcesContent":["/**\r\n * Created by sam_g on 2/7/2017.\r\n */\r\nimport { Store } from './Store';\r\nexport { Store } from './Store';\r\nexport default Store;\r\n//# sourceMappingURL=index.js.map"]}

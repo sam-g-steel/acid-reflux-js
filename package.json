@@ -1,11 +1,13 @@
 {
   "name": "acid-reflux-js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple library for uni-directional dataflow application architecture... inspired by Flux and Redux",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
   "scripts": {
-    "build": "tsc -d",
-    "generate-docs": "esdoc -c esdoc.json"
+    "build": "tsc -d -w",
+    "generate-docs": "esdoc -c esdoc.json",
+    "test": "node ./tests/demo-1.js"
   },
   "repository": {
     "type": "git",
@@ -14,21 +16,21 @@
   "keywords": [
     "Store"
   ],
-  "author": "Samuel Vincent Sylvester",
+  "author": "Samuel Vincent Sylvester Sr.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sam-g-steel/acid-reflux-js/issues"
   },
   "homepage": "https://github.com/sam-g-steel/acid-reflux-js#readme",
   "dependencies": {
-    "fbjs": "^0.8.9",
-    "lodash": ">=4.17.4"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "esdoc": "^1.0.4",
+    "@types/lodash": "^4.14.182",
+    "esdoc": "^1.1.0",
     "esdoc-ecmascript-proposal-plugin": "^1.0.0",
     "esdoc-standard-plugin": "^1.0.0",
-    "esdoc-typescript-plugin": "^1.0.0",
-    "typescript": "^3.9.6"
+    "esdoc-typescript-plugin": "^1.0.1",
+    "typescript": "^4.6.3"
   }
 }

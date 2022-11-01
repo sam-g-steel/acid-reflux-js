@@ -1,8 +1,8 @@
 /**
  * Created by sam_g on 2/7/2017.
  */
-import _ from 'lodash';
-import areEqual from 'fbjs/lib/areEqual';
+import * as _ from 'lodash';
+// import * as areEqual from 'fbjs/lib/areEqual';s
 
 /** Simple data store with history recording and on change callbacks */
 export class Store<stateInterface>{
@@ -214,7 +214,7 @@ export class Store<stateInterface>{
             if(property == "__time") continue;
 
             // Generate change list
-            if(!areEqual(newProperty, oldProperty)){
+            if(!_.isEqual(newProperty, oldProperty)){
                 changes.push({
                     property: property,
                     isNew: oldProperty == undefined || oldProperty == null
@@ -226,7 +226,7 @@ export class Store<stateInterface>{
     }
 
     /**
-     * Returns difference between two states in human readable form
+     * Returns difference between two states in human-readable form
      * @param {object} oldState
      * @param {object} newState
      * @return {string}

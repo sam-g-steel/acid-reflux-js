@@ -13,7 +13,7 @@
     ],
     "jsx": "preserve",
     "target": "ES5",
-    "module": "es2015",
+    "module": "CommonJS",
     //"allowJs": true,
     "moduleResolution": "node",
     "noImplicitAny": false,
@@ -22,7 +22,8 @@
     "removeComments": false,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "strict": false
   },
 
   "exclude": [
